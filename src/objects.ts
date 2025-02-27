@@ -37,8 +37,8 @@ export function isValid(question: Question, answer: string): boolean {
     }
     else if (question.type === "multiple_choice_question") {
         return question.options.includes(answer)}
-}
-
+    //return question.type === "short_answer_question" ? true: question.options.includes(answer)
+    }
 /**
  * Consumes a question and produces a string representation combining the
  * `id` and first 10 characters of the `name`. The two strings should be
